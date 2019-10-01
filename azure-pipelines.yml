@@ -23,8 +23,4 @@ steps:
     command: 'build'
     projects: '**/*.csproj'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'FunctionApp'
-    publishLocation: 'Container'
+
