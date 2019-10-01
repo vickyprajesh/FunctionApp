@@ -21,7 +21,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'https://github.com/vickyprajesh/FunctionApp/tree/master/DemoFunctionApp'
+    projects: 'https://github.com/vickyprajesh/FunctionApp/blob/master/DemoFunctionApp/DemoFunctionApp.csproj'
 
 - task: PublishBuildArtifacts@1
   inputs:
