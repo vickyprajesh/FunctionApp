@@ -21,7 +21,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '$(Build.ArtifactStagingDirectory)'
+    projects: 'https://github.com/vickyprajesh/FunctionApp/tree/master/DemoFunctionApp'
 
 - task: PublishBuildArtifacts@1
   inputs:
