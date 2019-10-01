@@ -23,9 +23,14 @@ steps:
     command: 'build'
     projects: '**/*.csproj'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'FunctionApp'
+    SourceFolder: 'DemoFunctionApp'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     
